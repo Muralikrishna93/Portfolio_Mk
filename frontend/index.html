@@ -1,13 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Murali's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <!--Header starts here-->
+  <header>
+    <div class="logo">MK</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Technologies</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="hire-btn">Hire Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--Header ends here-->
+
+  <section class="intro">
+    <img src="/asserts/images/finalmk.png" alt="Murali MK" class="profile-img">
+    <h1><span class="name">Muralikrishna Chimmasartha</span>, <span class="role">Software Developer</span></h1>
+  </section>
+
+  <section class="about">
+        <p>
+            I am a passionate Web Developer, graduated from Vasavi College of Engineering, Hyderabad. Skilled in building strong and scalable web applications
+            from various projects, I honed my skills in Front-end technologies React and Tailwind CSS, as well as back-end technologies
+            like Java, Springboot, MySQL and MongoDB. My aim is to use my skills to develop creative solutions that help businesses
+            grow and provide great user experiences.
+        </p>
+        <div class="buttons">
+            <a href="#" class="btn connect">Connect With Me</a>
+            <a href="#" class="btn resume">Resume</a>
+        </div>
+   </section>
+
+   <section class="about-section">
+    <h2><span class="gray">About</span> <span class="white">Me</span></h2><br><br>
+        <div class="about-content">
+            <div class="about-image">
+            <img src="/asserts/images/backmk.jpeg" alt="About Me Image">
+            </div>
+            <div class="about-text">
+            <p>
+                I completed my B.Tech at Vasavi College of Engineering. I have a keen interest in problem-solving and programming.
+                Technical skills include languages like C/C++, development languages like Javascript, Node JS, and Express JS,
+                databases like MongoDB, (Relational Database) MySQL, and UI tools like HTML5, CSS, and React JS.
+                Also familiar with computer science core fundamentals of Object Oriented Programming (OOPs),
+                Database Management Systems (DBMS), and Operating Systems (OS).
+                I have built some individual as well as team projects in the web development.
+                Outside academics, my hobbies include playing cricket, and solving puzzles.
+                I am open to embracing new technologies and approach tasks, whether individual or team-based,
+                with a commitment to delivering my best.
+                I consider myself a hardworking, sportive, and passionate individual.
+                I am always eager to take on new challenges and push my skills to the next level.
+                Feel free to connect with me, I am always open to exploring new opportunities and collaborating with like-minded individuals.
+            </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="technologies-section">
+        <h2>Technologia</h2>
+        <div class="tech-grid">
+                <div class="tech-item">
+                <img src="/asserts/images/react.gif" alt="React" style="border-radius: 10px;" height="30px" width="30px">
+                <p>React</p>
+                </div>
+                <div class="tech-item">
+                <img src="/asserts/images/nodejs.png " alt="NodeJs" style="border-radius: 10px;" >
+                <p>NodeJs</p>
+                </div>
+                <div class="tech-item">
+                <img src="/asserts/images/express.png" alt="ExpressJs" style="border-radius: 10px;">
+                <p>ExpressJs</p>
+                </div>
+                <div class="tech-item">
+                <img src="/asserts/images/mongodb.png" alt="MongoDB" style="border-radius: 10px;">
+                <p>Mongodb</p>
+                </div>
+                <div class="tech-item">
+                <img src="/asserts/images/javascript.gif" alt="JavaScript" style="border-radius: 10px;">
+                <p>JavaScript</p>
+                </div>
+                <div class="tech-item">
+                <img src="/asserts/images/tailwind.png" alt="Tailwind CSS" style="border-radius: 10px;">
+                <p>Tailwind CSS</p>
+                </div>
+                <div class="tech-item">
+                <img src="/asserts/images/html5.png" alt="HTML" style="border-radius: 10px;">
+                <p>HTML</p>
+                </div>
+                <div class="tech-item">
+                <img src="/asserts/images/cpp.png" alt="C++" style="border-radius: 10px;">
+                <p>C++</p>
+                </div>
+                <div class="tech-item">
+                <img src="/asserts/images/mysql.png" alt="MySQL" style="border-radius: 10px;">
+                <p>MySQL</p>
+                </div>
+                <div class="tech-item">
+                <img src="/asserts/images/css.png" alt="CSS" style="border-radius: 10px;">
+                <p>CSS</p>
+                </div>
+                <div class="tech-item">
+                <img src="/asserts/images/git.png" alt="Git" style="border-radius: 10px;">
+                <p>Git</p>
+                </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-container">
+        <div class="contact-left">
+          <h3>Let's Talk</h3>
+          <p>I'm open to discussing web development projects or partnership opportunities.</p>
+          <div class="contact-info">
+            <p><i class="fa fa-envelope"></i> murali2004ch@gmail.com</p>
+            <p><i class="fa fa-phone"></i> +91-8074563694</p>
+            <p><i class="fa fa-map-marker"></i> Suryapet, Telangana</p>
+          </div>
+        </div>
+        <form class="contact-right">
+          <label>Your Name</label>
+          <input type="text" placeholder="Enter Your Name" required>
+          <label>Email</label>
+          <input type="email" placeholder="Enter Your Email" required>
+          <label>Message</label>
+          <textarea rows="5" placeholder="Enter Your Message" required></textarea>
+          <button type="submit" class="send-btn">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2025 Mk. All rights reserved.</p>
+      <div class="footer-icons">
+
+        <a href="https://www.instagram.com/murli_818/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/MURALI_818" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/murali-krishna01/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Muralikrishna93" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </footer>
+
+
+
+
+</body>
 </html>
